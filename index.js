@@ -34,8 +34,15 @@ function logCodeSize(code) {
   console.log(prettiedSize);
 }
 
+
+// main
 const args = process.argv;
 const filename = args[2];
+if (!filename.endsWith('.js')) {
+  console.error('only js files are allowed');
+  process.exit(2);
+}
 console.log('compressing file', filename);
+
 const content = fs.readFileSync(path.resolve(filename), {encoding: 'utf-8'});
 logCodeSize(content)
