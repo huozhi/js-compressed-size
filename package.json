@@ -5,6 +5,10 @@
   "bin": "index.js",
   "scripts": {
   },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "author": "huozhi",
   "license": "MIT",
   "dependencies": {
