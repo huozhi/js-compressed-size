@@ -1,10 +1,21 @@
 {
   "name": "js-compressed-size",
   "version": "0.1.0",
-  "description": "display js file size after minified and gzip",
+  "description": "display js file size after minified and gzipped",
   "bin": "index.js",
   "scripts": {
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huozhi/js-compressed-size.git"
+  },
+  "keywords": [
+    "compress",
+    "js",
+    "size",
+    "minify",
+    "gzip"
+  ],
   "files": [
     "index.js",
     "README.md"

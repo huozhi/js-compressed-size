@@ -24,20 +24,21 @@ function minifyCode(code) {
 }
 
 function getGzipSize(code) {
-  return gzipSize.sync(code)
+  return gzipSize.sync(code);
 }
 
-function logCodeSize(code) {
+function logging(code) {
   const minifiedCode = minifyCode(code);
   const bytesLength = getGzipSize(minifiedCode);
   const prettiedSize = prettyBytes(bytesLength);
-  console.log(prettiedSize);
+  console.log(`size: ${prettiedSize} (raw bytes: ${bytesLength})`);
 }
 
 
 // main
 const args = process.argv;
 const filename = args[2];
+
 if (!filename.endsWith('.js')) {
   console.error('only js files are allowed');
   process.exit(2);
@@ -45,4 +46,4 @@ if (!filename.endsWith('.js')) {
 console.log('compressing file', filename);
 
 const content = fs.readFileSync(path.resolve(filename), {encoding: 'utf-8'});
-logCodeSize(content)
+logging(content);
