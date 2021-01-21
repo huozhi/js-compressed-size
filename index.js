@@ -38,8 +38,8 @@ function logging(filename, code) {
   
   console.log(`Input ${filename}`);
   console.log(`.....................`);
-  console.log('\x1b[36m%s\x1b[0m', `Origin size   >> ${prettyBytes(originSize)}`);
-  console.log('\x1b[36m%s\x1b[0m', `Minified size >> ${prettyBytes(minifiedSize)}`);
+  console.log('\x1b[36m%s\x1b[0m', `Origin size   >> ${sizeInfo(originSize)}`);
+  console.log('\x1b[36m%s\x1b[0m', `Minified size >> ${sizeInfo(minifiedSize)}`);
   console.log('\x1b[36m%s\x1b[0m', `After gzipped >> ${sizeInfo(gzippedSize)}`);
 }
 
