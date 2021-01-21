@@ -12,9 +12,13 @@ so you might be curious about the final file size. :)
 ## Usage
 
 ```sh
-js-compressed-size ./demo-script.js
+→ js-compressed-size ./demo-script.js
 
-# 1.86 kb
+Input index.js
+.....................
+Origin size   >> 1.45 kB
+Minified size >> 934 B
+After gzipped >> 499 B (raw bytes: 499)
 ```
 
 ## License
