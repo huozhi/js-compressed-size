@@ -10,6 +10,7 @@ const prettyBytes = require('pretty-bytes');
 function minifyCode(code) {
   const result = terser.minify(code, {
     mangle: {
+      toplevel: true,
       properties: false,
     },
     output: {
