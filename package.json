@@ -1,6 +1,6 @@
 {
   "name": "js-compressed-size",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "display js file size after minified and gzipped",
   "bin": "index.js",
   "scripts": {},
